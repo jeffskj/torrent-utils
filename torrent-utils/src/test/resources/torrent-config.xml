@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <torrent-providers>
+        <torrent-provider>http://ezrss.it</torrent-provider>
+    </torrent-providers>
+    <tv-shows>
+        <show name="The Office" />
+        <show name="The Big Bang Theory"/>
+        <show name="House"/>
+        <show name="Hells Kitchen US" start-season="5"/>
+        <show name="Family Guy"/>
+    </tv-shows>
+    <torrent-download-location>/torrent-download/downloads</torrent-download-location>
+    <finished-download-location>/torrent-download/finished</finished-download-location>
+    <video-library-location>/library/videos</video-library-location>
+    <properties>
+        <property name="piratebay.users.approved" value="eztv,someuser" />
+    </properties>
+</configuration>
