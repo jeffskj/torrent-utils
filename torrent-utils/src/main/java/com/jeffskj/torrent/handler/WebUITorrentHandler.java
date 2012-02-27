@@ -6,10 +6,10 @@ import org.slf4j.LoggerFactory;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.inject.Inject;
-import com.jeffskj.torrent.UrlUtils;
 import com.jeffskj.torrent.config.Configuration;
 import com.jeffskj.torrent.config.Torrent;
 import com.jeffskj.torrent.http.HttpClient;
+import com.jeffskj.torrent.util.UrlUtils;
 
 public class WebUITorrentHandler implements TorrentHandler {
     private static final Logger logger = LoggerFactory.getLogger(WebUITorrentHandler.class);

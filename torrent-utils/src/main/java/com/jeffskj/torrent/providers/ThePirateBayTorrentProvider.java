@@ -17,13 +17,13 @@ import com.google.common.base.Splitter;
 import com.google.common.collect.Sets;
 import com.google.inject.Inject;
 import com.jeffskj.torrent.StringUtils;
-import com.jeffskj.torrent.UrlUtils;
 import com.jeffskj.torrent.config.Configuration;
 import com.jeffskj.torrent.config.Episode;
 import com.jeffskj.torrent.config.Torrent;
 import com.jeffskj.torrent.http.HttpClient;
 import com.jeffskj.torrent.http.Response;
 import com.jeffskj.torrent.http.SimpleHttpClient;
+import com.jeffskj.torrent.util.UrlUtils;
 
 public class ThePirateBayTorrentProvider implements TorrentProvider
 {
