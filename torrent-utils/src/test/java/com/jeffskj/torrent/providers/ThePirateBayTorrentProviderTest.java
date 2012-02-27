@@ -28,7 +28,7 @@ public class ThePirateBayTorrentProviderTest extends AbstractTVShowTest
     {
         HttpClient client = EasyMock.createMock(HttpClient.class);
         Response r = new Response(IOUtils.toString(getTestResource("tpb-results.txt")), "");
-        EasyMock.expect(client.get("http://thepiratebay.org/search/House+S08E04", false)).andReturn(r);
+        EasyMock.expect(client.get("http://thepiratebay.se/search/House+S08E04", false)).andReturn(r);
         EasyMock.replay(client);
         
         Episode episode = getEpisode("House", 8, 4);
