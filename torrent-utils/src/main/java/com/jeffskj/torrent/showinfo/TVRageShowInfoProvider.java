@@ -89,7 +89,7 @@ public class TVRageShowInfoProvider implements ShowInfoProvider {
     private int getShowId(String name) {
         try {
             Response response = client.get("http://www.tvrage.com/feeds/search.php?show=" + URLEncoder.encode(name, "utf-8"));
-            String responseString = response.getBodyAsString().substring(0, 1000);
+            String responseString = response.getBodyAsString();
             String sid = StringUtils.substringBefore(StringUtils.substringAfter(responseString, "<showid>"), "</showid>");
             if (sid == null) {
                 return -1;

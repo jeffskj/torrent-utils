@@ -22,5 +22,17 @@ public class TVRageShowInfoProviderTest
         assertEquals("US", show.getCountry());
         assertTrue(show.getSeasons().size() >= 5);
     }
+    
+    @Test
+  @Ignore
+  public void getShowInfo2()
+  {
+      TVRageShowInfoProvider provider = new TVRageShowInfoProvider(new SimpleHttpClient());
+      TVShow show = provider.getShowInfo("Mythbusters");
+      assertEquals(4605, show.getId());
+      assertEquals(60, show.getRuntime());
+      assertEquals("US", show.getCountry());
+      assertTrue(show.getSeasons().size() >= 5);
+  }
 
 }
