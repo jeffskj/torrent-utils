@@ -61,7 +61,7 @@ public class TorrentOrganizer
     {
         deleteMarkedFiles(sourceRoot);
         extractRarFiles(sourceRoot);
-        Collection<File> files = FileUtils.listFiles(sourceRoot, new WildcardFileFilter("*.avi"), TrueFileFilter.INSTANCE);
+        Collection<File> files = FileUtils.listFiles(sourceRoot, new WildcardFileFilter(new String[] {"*.avi", "*.mp4"}), TrueFileFilter.INSTANCE);
         log.debug("found {} files to organize", files.size());
         
         for (File file : files)
